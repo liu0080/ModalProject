@@ -1,151 +1,203 @@
 <div class="container-fluid">
     <img src="img/image1.jpg " style="width:100%">
+    <div class="bg-image"></div>
+    <!-- Text on image -->
+    <div class="bg-text">
+        <h2 style="color:white">Welcome to CrossFit's Homepage</h2>
+        <h2 style="color:antiquewhite"> Write something Here!!! </h2>
+        <a href='index.php?page=register'><input type='button' value='Join Us' class='btn btn-primary '></a>
+        <a href='index.php?page=signin'><input type='button' value='Member Space' class='btn btn-primary'></a>
+    </div>
 </div>
-<div class="content"></div>
-<style>
-    body,
-    html {
-        height: 100%;
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-    }
+<div class="container py-5">
+    <div class="row text-center text-white">
+        <div class="col-lg-8 mx-auto">
+            <h1 style='color:white'>Our Team</h1>
+        </div>
+    </div>
+</div><!-- End -->
 
-    * {
-        box-sizing: border-box;
-    }
+<div class="container">
+    <div class="row text-center">
 
-    .bg-image {
-        /* Add the blur effect */
-        filter: blur(10px);
-        -webkit-filter: blur(10px);
+        <!-- Team item -->
+        <div class="col-xl-6 col-sm-6 mb-5">
+            <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://placeimg.com/380/230/nature" alt="" width="150" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                <h5 class="mb-0">Benjamin --- </h5>
+                <h6><span class="small text-uppercase text-muted">Chef de la Section </span></h6>
+                <ul class="social-network social-circle">
+                    <li><a style='background-color:#D3D3D3' href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                    <li><a style='background-color:#D3D3D3' href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                    <li><a style='background-color:#D3D3D3' href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div><!-- End -->
+        <!-- Team item -->
+        <div class="col-xl-6 col-sm-6 mb-5">
+            <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://placeimg.com/380/230/nature" alt="" width="150" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                <h5 class="mb-0">Coach</h5>
+                <h6><span class="small text-uppercase text-muted">Coach</span></h6>
+                <ul class="social-network social-circle">
+                    <li><a style='background-color:#D3D3D3' href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                    <li><a style='background-color:#D3D3D3' href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
 
-        /* Full height */
-        height: 100%;
+                    <li><a style='background-color:#D3D3D3' href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div><!-- End -->
+        <!-- Team item -->
+        <div class="col-xl-2 col-sm-6 mb-5">
+            <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://placeimg.com/380/230/nature" alt="" width="150" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                <h5 class="mb-0">Person 1</h5>
+                <h6><span class="small text-uppercase text-muted">X2020</span></h6>
+                <ul class="social-network social-circle">
+                    <li><a style='background-color:#D3D3D3' href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                    <li><a style='background-color:#D3D3D3' href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
 
-        /* Center and scale the image nicely */
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+                    <li><a style='background-color:#D3D3D3' href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div><!-- End -->
 
-    /* Position text in the middle of the page/image */
-    .bg-text {
-        background-color: rgb(0, 0, 0);
-        /* Fallback color */
-        background-color: rgba(0, 0, 0, 0.4);
-        /* Black w/opacity/see-through */
-        color: white;
-        font-weight: bold;
-        border: 1px solid #f1f1f1;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 2;
-        width: 80%;
-        padding: 20px;
-        text-align: center;
-    }
+        <!-- Team item -->
+        <div class="col-xl-2 col-sm-6 mb-5">
+            <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://placeimg.com/380/230/nature" alt="" width="150" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                <h5 class="mb-0">Person 2</h5>
+                <h6><span class="small text-uppercase text-muted">X2020</span></h6>
+                <ul class="social-network social-circle">
+                    <li><a style='background-color:#D3D3D3' href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                    <li><a style='background-color:#D3D3D3' href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                    <li><a style='background-color:#D3D3D3' href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div><!-- End -->
 
-    body {
-        background: #888;
-    }
+        <!-- Team item -->
+        <div class="col-xl-2 col-sm-6 mb-5">
+            <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://placeimg.com/380/230/nature" alt="" width="150" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                <h5 class="mb-0">Person 3</h5>
+                <h6><span class="small text-uppercase text-muted">X2020</span></h6>
+                <ul class="social-network social-circle">
+                    <li><a style='background-color:#D3D3D3' href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                    <li><a style='background-color:#D3D3D3' href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
 
-    .form-control::placeholder {
-        font-size: 0.95rem;
-        color: #aaa;
-        font-style: italic;
-    }
+                    <li><a style='background-color:#D3D3D3' href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div><!-- End -->
 
-    .form-control.shadow-0:focus {
-        box-shadow: none;
-    }
+        <!-- Team item -->
+        <div class="col-xl-2 col-sm-6 mb-5">
+            <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://placeimg.com/380/230/nature" alt="" width="150" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                <h5 class="mb-0">Person 3</h5>
+                <h6><span class="small text-uppercase text-muted">X2020</span></h6>
+                <ul class="social-network social-circle">
+                    <li><a style='background-color:#D3D3D3' href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                    <li><a style='background-color:#D3D3D3' href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
 
-    .kilimanjaro_social_links a {
-        border: 1px solid #333;
-        border-radius: 6px;
-        color: #888;
-        display: inline-block;
-        font-size: 13px;
-        margin-bottom: 3px;
-        padding: 7px 12px;
-    }
-</style>
+                    <li><a style='background-color:#D3D3D3' href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div><!-- End -->
+        <!-- Team item -->
+        <div class="col-xl-2 col-sm-6 mb-5">
+            <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://placeimg.com/380/230/nature" alt="" width="150" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                <h5 class="mb-0">Person 4</h5>
+                <h6><span class="small text-uppercase text-muted">X2020</span></h6>
+                <ul class="social-network social-circle">
+                    <li><a style='background-color:#D3D3D3' href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                    <li><a style='background-color:#D3D3D3' href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
 
-<div class="bg-image"></div>
-<!-- Text on image -->
-<div class="bg-text">
-    <h2 style="color:white">Welcome to CrossFit's Homepage</h2>
-    <h2 style="color:antiquewhite"> Write something Here!!! </h2>
-    <a href='index.php?page=register'><input type='button' value='Join Us' class='btn btn-primary '></a>
-    <a href='index.php?page=signin'><input type='button' value='Member Space' class='btn btn-primary'></a>
+                    <li><a style='background-color:#D3D3D3' href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div><!-- End -->
+        <!-- Team item -->
+        <div class="col-xl-2 col-sm-6 mb-5">
+            <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://placeimg.com/380/230/nature" alt="" width="150" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                <h5 class="mb-0">Person 5</h5>
+                <h6><span class="small text-uppercase text-muted">X2020</span></h6>
+                <ul class="social-network social-circle">
+                    <li><a style='background-color:#D3D3D3' href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                    <li><a style='background-color:#D3D3D3' href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                    <li><a style='background-color:#D3D3D3' href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div><!-- End -->
+    </div>
 </div>
-<!-- Footer -->
-<footer class="bg-white">
+<section class="details-card">
+    <div class="row text-center text-white">
+        <div class="col-lg-8 mx-auto">
+            <h1 style='color:white'>Our Events</h1>
+        </div>
+    </div>
     <div class="container">
-        <div class="row py-4">
-            <div class="col-lg-2"><img src="img/logo.jpeg" alt="" width="150" class="mb-3">
-                <p class="font-italic text-muted"><b>CrossFit BlaBlaBla</b></p>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card-content">
+                    <div class="card-img">
+                        <img src="https://placeimg.com/380/230/nature" alt="">
+                        <span>
+                            <h4>heading</h4>
+                        </span>
+                    </div>
+                    <div class="card-desc">
+                        <h3>Heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo, perspiciatis
+                            voluptas totam</p>
+                        <a href="#" class="btn-card">Read</a>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-3">
-                <h5 class="text-uppercase font-weight-bold mb-4">CrossFit</h6>
-                    <ul class="list-unstyled mb-0">
-                        <li class="mb-2"><a href="#" class="text-muted">Our Team</a></li>
-                        <li class="mb-2"><a href="#" class="text-muted">Our Events</a></li>
-                        <li class="mb-2"><a href="#" class="text-muted">Our Policy</a></li>
-                        <li class="mb-2"><a href="#" class="text-muted">Our Blog</a></li>
-                    </ul>
+            <div class="col-md-3">
+                <div class="card-content">
+                    <div class="card-img">
+                        <img src="https://placeimg.com/380/230/animals" alt="">
+                        <span>
+                            <h4>heading2</h4>
+                        </span>
+                    </div>
+                    <div class="card-desc">
+                        <h3>Heading2</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo, perspiciatis
+                            voluptas totam</p>
+                        <a href="#" class="btn-card">Read</a>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-3">
-                <h5 class="text-uppercase font-weight-bold mb-4">Quick Contacts</h6>
-                    <ul class="list-unstyled mb-0">
-                        <li class="mb-2"><a href="#" class="text-muted">+33 669507899</a></li>
-                        <li class="mb-2"><a href="https://webmail.polytechnique.fr/" class="text-muted">Email</a></li>
-                    </ul>
-                    <h5>Social Links</h5>
-                    <ul class="kilimanjaro_social_links">
-                        <li><a href="https://www.facebook.com/laychiva.chhout.3/"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a></li>
-                        <li><a href="https://www.instagram.com/x20_crossfit/"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></li>
-                    </ul>
+            <div class="col-md-3">
+                <div class="card-content">
+                    <div class="card-img">
+                        <img src="https://placeimg.com/380/230/tech" alt="">
+                        <span>
+                            <h4>heading3</h4>
+                        </span>
+                    </div>
+                    <div class="card-desc">
+                        <h3>Heading3</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo, perspiciatis
+                            voluptas totam</p>
+                        <a href="#" class="btn-card">Read</a>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-4">
-                <h5 class="text-uppercase font-weight-bold mb-4">Contact Us</h5>
-                <hr>
-                <form>
-                    <fieldset class="form-group">
-                        <label for="InputEmail">Enter your email</label>
-                        <input type="email" class="form-control" id="InputEmail" placeholder="Enter email">
-                    </fieldset>
-                    <fieldset class="form-group">
-                        <label for="sport_section">Where do you come from?</label>
-                        <select class="form-select" id="sport_section">
-                            <option>Crossfit</option>
-                            <option>Tennis</option>
-                            <option>Football</option>
-                            <option>Boxing</option>
-                            <option>Volleyball</option>
-                            <option>Rugby</option>
-                            <option>Natation</option>
-                        </select>
-                    </fieldset>
-                    <fieldset class="form-group">
-                        <label for="exampleMessage">What is in your mind?</label>
-                        <textarea class="form-control" id="exampleMessage" placeholder="Message"></textarea>
-                    </fieldset>
-                    <fieldset class="form-group text-xs-right">
-                        <p></p>
-                        <button type="button" class="btn btn-primary">Send</button>
-                    </fieldset>
-                </form>
+            <div class="col-md-3">
+                <div class="card-content">
+                    <div class="card-img">
+                        <img src="https://placeimg.com/380/230/tech" alt="">
+                        <span>
+                            <h4>heading3</h4>
+                        </span>
+                    </div>
+                    <div class="card-desc">
+                        <h3>Heading3</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo, perspiciatis
+                            voluptas totam</p>
+                        <a href="#" class="btn-card">Read</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    </div>
-
-    <!-- Copyrights -->
-    <div class="bg-light py-4">
-        <div class="container text-center">
-            <p class="text-muted mb-0 py-2">©CrossFit X2020 All rights reserved.</p>
-        </div>
-    </div>
-</footer>
+</section>
