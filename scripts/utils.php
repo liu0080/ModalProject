@@ -12,10 +12,12 @@ function generateHTMLHeader($title)
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
     <link href="https://bootswatch.com/5/minty/bootstrap.min.css" rel="stylesheet">
     <link href="https://bootswatch.com/5/minty/bootstrap.css" rel="stylesheet">
     <link href="http://code.jquery.com/jquery-3.6.0.min.js" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="js/code.js"></script>
@@ -27,6 +29,45 @@ END;
 function generateHTMLFooter()
 {
     echo <<<END
+    <!-- Footer -->
+<footer class="bg-white">
+    <div class="container">
+        <div class="row py-4">
+            <div class="col-lg-4"><img src="img/logo.jpeg" alt="" width="150" class="mb-3">
+                <p class="font-italic text-muted"><b>CrossFit BlaBlaBla</b></p>
+            </div>
+            <div class="col-lg-4">
+                <h5 class="text-uppercase font-weight-bold mb-4">CrossFit</h6>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="" class="text-muted">Our Team</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted">Our Events</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted">Our Policy</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted">Our Blog</a></li>
+                    </ul>
+            </div>
+            <div class="col-lg-4">
+                <h5 class="text-uppercase font-weight-bold mb-4">Quick Contacts</h6>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="#" class="text-muted">+33 669507899</a></li>
+                        <li class="mb-2"><a href="https://webmail.polytechnique.fr/" class="text-muted">Email</a></li>
+                    </ul>
+                    <h5>Social Links</h5>
+                    <ul class="kilimanjaro_social_links">
+                        <li><a href="https://www.facebook.com/laychiva.chhout.3/"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a></li>
+                        <li><a href="https://www.instagram.com/x20_crossfit/"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Copyrights -->
+    <div class="bg-light py-4">
+        <div class="container text-center">
+            <p class="text-muted mb-0 py-2">©CrossFit X2020 All rights reserved.</p>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
 END;
