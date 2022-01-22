@@ -22,6 +22,7 @@ function generateHTMLHeader($title)
     <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="js/code.js"></script>
 </head>
+<a name="totop"></a>
 <body>
 END;
 }
@@ -40,9 +41,8 @@ function generateHTMLFooter()
                 <h5 class="text-uppercase font-weight-bold mb-4">CrossFit</h6>
                     <ul class="list-unstyled mb-0">
                         <li class="mb-2"><a href="" class="text-muted">Our Team</a></li>
-                        <li class="mb-2"><a href="#" class="text-muted">Our Events</a></li>
+
                         <li class="mb-2"><a href="#" class="text-muted">Our Policy</a></li>
-                        <li class="mb-2"><a href="#" class="text-muted">Our Blog</a></li>
                     </ul>
             </div>
             <div class="col-lg-4">
@@ -92,9 +92,9 @@ $pageList = array(
         "title" => "Signin"
     ),
     array(
-        "name" => "schedule",
-        "title" => "Schedule",
-        "menutitle" => "Schedule"
+        "name" => "ourteam",
+        "title" => "Our Team",
+        "menutitle" => "Our Team"
     ),
     array(
         "name" => "contacts",
@@ -128,9 +128,9 @@ function generateMenu($askedPage)
 {
     global $pageList;
     echo <<<END
-                <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
                 <div class="container-fluid">
-                <a class="navbar-brand" href="#">CrossFit</a>
+                <a class="navbar-brand" href="#totop">CrossFit</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -157,3 +157,4 @@ function generateMenu($askedPage)
                 </nav>
     END;
 }
+
