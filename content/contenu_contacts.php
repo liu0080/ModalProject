@@ -13,13 +13,17 @@
             <div class="form-group">
                 <label for="sport_section" class="form-label mt-4" style='color:aliceblue'>Where do you come from?</label>
                 <select class="form-select" id="sport_section">
-                    <option>Crossfit</option>
+                    <option value="">Crossfit</option>
                     <option>Tennis</option>
                     <option>Football</option>
                     <option>Boxing</option>
                     <option>Volleyball</option>
                     <option>Rugby</option>
                     <option>Natation</option>
+                    <option>Raid</option>
+                    <option>Handball</option>
+                    <option value="">Fencing</option>
+                    <option value="">Others</option>
                 </select>
             </div>
             <div class="form-group">
