@@ -31,7 +31,7 @@ function generateHTMLFooter()
 {
     echo <<<END
     <!-- Footer -->
-<footer class="bg-white">
+<footer class="bg-white container-fluid">
     <div class="container">
         <div class="row py-4">
             <div class="col-lg-4"><img src="img/logo.jpeg" alt="" width="150" class="mb-3">
@@ -128,7 +128,7 @@ function generateMenu($askedPage)
 {
     global $pageList;
     echo <<<END
-                <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+                <nav class="navbar navbar-expand-md navbar-dark bg-primary">
                 <div class="container-fluid">
                 <a class="navbar-brand" href="#totop">CrossFit</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -152,9 +152,33 @@ function generateMenu($askedPage)
     }
     echo <<<END
                 </ul>
+                END;
+    // if ($_SESSION['loggedIn'] == false) {
+    //    echo <<<END
+    //   <a href='index.php?page=signin'><input type='button' value = 'Sign in' class='btn btn-outline-light my-2 my-sm-0'></a>
+    //    END;
+    //}
+    //if ($_SESSION['loggedIn'] == true) {
+    //    printLogoutForm();
+    //}
+    if ($_SESSION['loggedIn'] == false) {
+        echo <<<END
                 <a href='index.php?page=signin'><input type='button' value = 'Sign in' class='btn btn-outline-light my-2 my-sm-0'></a>
                 </div>
                 </nav>
     END;
+    } else if ($_SESSION['loggedIn'] == true) {
+        echo <<<END
+        <a href='index.php?page=info&todo=logout'><input type ='submit' value='Disconnect' class ="btn btn-danger"></a>
+        <a href='index.php?page=compte'><input type='button' value = 'Your account' class = "btn btn-primary"></a>
+        </div>
+        </nav>
+        END;
+    }
+    // echo <<<END
+    //          </div>
+    //          </nav>
+    //          END;
 }
+
 
