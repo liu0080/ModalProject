@@ -13,7 +13,7 @@ class Utilisateur
 
     public static function getUtilisateur($dbh, $login)
     {
-        $query = "SELECT * FROM utilisateurs WHERE login = ?";
+        $query = "SELECT * FROM utilisateurs WHERE login = ?"; // eviter le piratage
         $sth = $dbh->prepare($query);
         $sth->setFetchMode(PDO::FETCH_CLASS, 'Utilisateur');
         $sth->execute(array($login));
@@ -26,7 +26,7 @@ class Utilisateur
     public static function insererUtilisateur($dbh, $login, $mdp, $nom, $prenom)
     {
 
-        $query = "INSERT INTO utilisateurs(login,mdp,nom,prenom) VALUES (?,?,?,?)";
+        $query = "INSERT INTO utilisateurs(login,mdp,nom,prenom) VALUES (?,?,?,?)"; // eviter le piratage
         $sth = $dbh->prepare($query);
         $sth->execute(array($login, sha1($mdp), $nom, $prenom,));
         return ($sth->rowCount() == 1);
@@ -34,14 +34,14 @@ class Utilisateur
 
     public function testerMDP($dbh, $mdp)
     {
-        $query = "SELECT * FROM utilisateurs WHERE login = ? AND mdp = ?";
+        $query = "SELECT * FROM utilisateurs WHERE login = ? AND mdp = ?"; // eviter le piratage
         $sth = $dbh->prepare($query);
         $sth->execute(array($this->login, sha1($mdp)));
         return ($sth->rowCount() == 1);
     }
     public function updateMDP($dbh, $mdp)
     {
-        $query = "UPDATE utilisateurs SET mdp = ? WHERE login = ?";
+        $query = "UPDATE utilisateurs SET mdp = ? WHERE login = ?"; // eviter le piratage
         $sth = $dbh->prepare($query);
         $sth->execute(array(sha1($mdp), $this->login));
         return ($sth->rowCount() == 1);

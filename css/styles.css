@@ -2,7 +2,6 @@
   background-color: #f4f4f4 !important;
   color: #000 !important;
 }
-body,
 html {
   height: 100%;
   margin: 0;
@@ -11,6 +10,15 @@ html {
 
 * {
   box-sizing: border-box;
+}
+
+.container-style {
+  margin-top: 77px;
+}
+
+/* Main content */
+.main {
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
 }
 
 .bg-image {
@@ -283,4 +291,20 @@ a.btn-card {
   /* Height of the footer*/
   height: 40px;
   background: grey;
+}
+table {
+  border: 1px solid black;
+}
+
+td {
+  border: 1px solid black;
+}
+container {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+form i {
+  margin-left: -30px;
+  cursor: pointer;
 }

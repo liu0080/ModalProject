@@ -1,12 +1,16 @@
-<div class="container py-5">
-    <div class="row text-center text-white">
-        <div class="col-lg-8 mx-auto">
+<?php
+function getMenu()
+{
+    echo <<<END
+    <section id="ourteam">
+    <div class="container py-5">
+        <div class="row text-center text-white">
+            <div class="col-lg-8 mx-auto">
             <h1 style='color:white'>Our Team</h1>
+            </div>
         </div>
     </div>
-</div>
-<section id="ourteam">
-    <div class="container">
+        <div class="container">
         <a name="team"></a>
         <div class="row text-center">
             <!-- Team item -->
@@ -113,6 +117,8 @@
                 </div>
             </div><!-- End -->
         </div>
-    </div>
+    </div>  
 
-</section>
+    </section>
+    END;
+}
