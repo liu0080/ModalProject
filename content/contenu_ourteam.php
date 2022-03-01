@@ -1,118 +1,61 @@
-<div class="container py-5">
-    <div class="row text-center text-white">
-        <div class="col-lg-8 mx-auto">
-            <h1 style='color:white'>Our Team</h1>
-        </div>
-    </div>
+<?php
+$sql = "SELECT * FROM utilisateurs";
+
+$sql = $result = $dbh->query($sql);
+
+echo <<<END
+
+<section>
+<div style = "text-align: center">
+    <h2 style="color:#375a7f"> 
+        CrossFit
+    </h2>
+    <p style="color:#375a7f">
+        Cette section sportive a été créée en 2020 à l'École Polytechnique. 
+    </p>
 </div>
-<section id="ourteam">
-    <div class="container">
-        <a name="team"></a>
-        <div class="row text-center">
-            <!-- Team item -->
-            <div class="col-xl-6 col-sm-6 mb-5">
-                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://placeimg.com/380/230/nature" alt="" width="200" class="img rounded-circle mb-3 img-thumbnail shadow-sm">
-                    <h5 class="mb-0">Benjamin --- </h5>
-                    <h6><span class="small text-uppercase text-muted">Chef de la Section </span></h6>
-                    <ul class="social-network social-circle">
-                        <li><a style='background-color:#D3D3D3' href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                        <li><a style='background-color:#D3D3D3' href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                        <li><a style='background-color:#D3D3D3' href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
-            </div><!-- End -->
-            <!-- Team item -->
-            <div class="col-xl-6 col-sm-6 mb-5">
-                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://placeimg.com/380/230/nature" alt="" width="200" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                    <h5 class="mb-0">Coach</h5>
-                    <h6><span class="small text-uppercase text-muted">Coach</span></h6>
-                    <ul class="social-network social-circle">
-                        <li><a style='background-color:#D3D3D3' href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                        <li><a style='background-color:#D3D3D3' href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-
-                        <li><a style='background-color:#D3D3D3' href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
-            </div><!-- End -->
-            <!-- Team item -->
-            <div class="col-xl-2 col-sm-6 mb-5">
-                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://placeimg.com/380/230/nature" alt="" width="150" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                    <h5 class="mb-0">Person 1</h5>
-                    <h6><span class="small text-uppercase text-muted">X2020</span></h6>
-                    <ul class="social-network social-circle">
-                        <li><a style='background-color:#D3D3D3' href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                        <li><a style='background-color:#D3D3D3' href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-
-                        <li><a style='background-color:#D3D3D3' href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
-            </div><!-- End -->
-
-            <!-- Team item -->
-            <div class="col-xl-2 col-sm-6 mb-5">
-                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://placeimg.com/380/230/nature" alt="" width="150" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                    <h5 class="mb-0">Person 2</h5>
-                    <h6><span class="small text-uppercase text-muted">X2020</span></h6>
-                    <ul class="social-network social-circle">
-                        <li><a style='background-color:#D3D3D3' href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                        <li><a style='background-color:#D3D3D3' href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                        <li><a style='background-color:#D3D3D3' href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
-            </div><!-- End -->
-
-            <!-- Team item -->
-            <div class="col-xl-2 col-sm-6 mb-5">
-                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://placeimg.com/380/230/nature" alt="" width="150" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                    <h5 class="mb-0">Person 3</h5>
-                    <h6><span class="small text-uppercase text-muted">X2020</span></h6>
-                    <ul class="social-network social-circle">
-                        <li><a style='background-color:#D3D3D3' href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                        <li><a style='background-color:#D3D3D3' href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-
-                        <li><a style='background-color:#D3D3D3' href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
-            </div><!-- End -->
-
-            <!-- Team item -->
-            <div class="col-xl-2 col-sm-6 mb-5">
-                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://placeimg.com/380/230/nature" alt="" width="150" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                    <h5 class="mb-0">Person 3</h5>
-                    <h6><span class="small text-uppercase text-muted">X2020</span></h6>
-                    <ul class="social-network social-circle">
-                        <li><a style='background-color:#D3D3D3' href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                        <li><a style='background-color:#D3D3D3' href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                        <li><a style='background-color:#D3D3D3' href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
-            </div><!-- End -->
-            <!-- Team item -->
-            <div class="col-xl-2 col-sm-6 mb-5">
-                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://placeimg.com/380/230/nature" alt="" width="150" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                    <h5 class="mb-0">Person 4</h5>
-                    <h6><span class="small text-uppercase text-muted">X2020</span></h6>
-                    <ul class="social-network social-circle">
-                        <li><a style='background-color:#D3D3D3' href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                        <li><a style='background-color:#D3D3D3' href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-
-                        <li><a style='background-color:#D3D3D3' href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
-            </div><!-- End -->
-            <!-- Team item -->
-            <div class="col-xl-2 col-sm-6 mb-5">
-                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://placeimg.com/380/230/nature" alt="" width="150" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                    <h5 class="mb-0">Person 5</h5>
-                    <h6><span class="small text-uppercase text-muted">X2020</span></h6>
-                    <ul class="social-network social-circle">
-                        <li><a style='background-color:#D3D3D3' href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                        <li><a style='background-color:#D3D3D3' href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                        <li><a style='background-color:#D3D3D3' href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
-            </div><!-- End -->
+<br><br>
+<div class="container">
+<h4 style="color:#375a7f">Nos membres:</h4>
+<br><br>
+<div class="row">
+END;
+if ($result->rowCount() > 0) {
+  // Output the users in the table 'utilisateur'
+  while ($row = $result->fetch()) {
+    echo <<<END
+            <div class='col-md-3'>
+                <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                transition: 0.3s;
+                width: 100%;
+                border-radius: 5px;">
+                    <img src="uploads/{$row['avatar']}" alt="Avatar" style="width:100%;height:180px">
+                    <div class="container" style="padding: 2px 16px;">
+                        <h6><b>Name: {$row['nom']} {$row['prenom']}</b></h6> 
+                        <p>Email: {$row['email']}</p> 
+                        <p>Promotion: {$row['promotion']}</p> 
+        END;
+    // if ($row['Admin'] == 0) {
+    //     echo "<p> Student </p>";
+    // } else {
+    //     echo "<p> Chef de la section </p>";
+    // }
+    echo <<<END
         </div>
-    </div>
+        </div>
+        </div>
+        END;
+  }
+} else {
+  echo "";
+}
+echo <<<END
+</div>
+<br><br>
+<a href="https://www.polytechnique.edu/fr/sports" style="color:#375a7f"><h4 style="color:#375a7f">Les infrastructures sportives de qualité</h4></a>
 
+</div>
 </section>
+
+
+END;

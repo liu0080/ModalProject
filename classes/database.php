@@ -3,9 +3,9 @@ class Database
 {
     public static function connect()
     {
-        $dsn = 'mysql:dbname=modal_newest;host=localhost:8889';
+        $dsn = 'mysql:dbname=modal_newest;host=localhost';
         $user = 'root';
-        $password = '099618598';
+        $password = '';
         $dbh = null;
         try {
             $dbh = new PDO($dsn, $user, $password, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));

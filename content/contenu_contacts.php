@@ -1,57 +1,61 @@
-<?php require('classes\contact_form_info.php');
+<?php
+
+require("classes/contact_form_info.php");
+
 $ok = false;
-if (array_key_exists('email', $_POST) && $_POST['email'] != "" && array_key_exists('section', $_POST) && array_key_exists('message', $_POST) && $_POST['message'] !='') {
+
+if (array_key_exists('email', $_POST) && $_POST['email'] != "" && array_key_exists('section', $_POST) && array_key_exists('message', $_POST) && $_POST['message'] != '') {
     $ok = ContactInfo::insererMessage($dbh, $_POST['email'], $_POST['section'], $_POST['message'], date("Y/m/d"));
 }
 if ($ok) {
-    echo "<h3> Succesfully sent! </h3>";
+    echo "<script>
+            parent.location.href = 'index.php?page=sent';
+        </script>
+        ";
 }
 ?>
-
-
-
 <div class="container">
     <div class="row">
         <div class="col-md-6">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/POLYTECHNIQUE-IP_PARIS.png" alt="" width="300" class="mb-3" style="margin-left: 120px;
+    margin-top: 50px;">
         </div>
         <div class=" col-md-6">
             <form autocomplete="off" method="POST" action="index.php?page=contacts">
                 <fieldset>
                     <div class="row text-center text-white">
                         <div class="col-lg-8 mx-auto">
-                            <h1 style="color:white;margin-top: 30px;">Contact Us!</h1>
+                            <h1 style="color:white;margin-top: 30px;">Contactez-Nous!</h1>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputEmail1" style='color:aliceblue' class="form-label mt-4">Email address</label>
-                        <input autocomplete="off" type="email" class="form-control" name='email' id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                        <label style='color:aliceblue' class="form-label mt-4">Address mail</label>
+                        <input autocomplete="off" type="email" class="form-control" name='email' id="exampleInputEmail1" placeholder="e-mail" required>
                     </div>
                     <div class="form-group">
-                        <label for="sport_section" class="form-label mt-4" style='color:aliceblue'>Where do you come from?</label>
+                        <label for="sport_section" class="form-label mt-4" style='color:aliceblue'>Vous êtes?</label>
                         <select class="form-select" name='section' id="sport_section">
-                            <option >Crossfit</option>
-                            <option>Tennis</option>
-                            <option>Football</option>
-                            <option>Boxing</option>
-                            <option>Volleyball</option>
-                            <option>Rugby</option>
-                            <option>Natation</option>
-                            <option>Raid</option>
-                            <option>Handball</option>
-                            <option value="">Fencing</option>
-                            <option value="">Others</option>
+                            <option value="Crossfit" selected>Crossfit</option>
+                            <option value="Tennis">Tennis</option>
+                            <option value="Football">Football</option>
+                            <option value="Boxe">Boxe</option>
+                            <option value="Volleyball">Volleyball</option>
+                            <option value="Rugby">Rugby</option>
+                            <option value="Natation">Natation</option>
+                            <option value="Raid">Raid</option>
+                            <option value="Handball">Handball</option>
+                            <option value="Escrime">Escrime</option>
+                            <option value="Autres">Autres</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="exampleTextarea" style='color:aliceblue' class="form-label mt-4">Your message:</label>
+                        <label style='color:aliceblue' class="form-label mt-4">Votre message:</label>
                         <textarea class="form-control" name='message' id="exampleTextarea" rows="3" required></textarea>
                     </div>
                     <br>
-                    <center style='color:aliceblue'><button type="submit" class="btn btn-primary">Submit</button> We will reply as soon as possible.</center>
-                    </br>
+                    <button style="margin-left : 40%" type="submit" class="btn btn-primary">Envoyer</button>
                 </fieldset>
             </form>
         </div>
     </div>
-
 </div>

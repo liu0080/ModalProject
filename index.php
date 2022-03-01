@@ -2,14 +2,10 @@
 
 session_name("laychiva");
 session_start();
-//$session_value=(isset($_SESSION['id']))?$_SESSION['id']:'';
-$_SESSION["loggedIn"] = "";
 
 require('scripts/utils.php');
 require('classes/database.php');
 require('classes/utilisateurs.php');
-require('scripts/printForms.php');
-require('scripts/loginOut.php');
 
 $dbh = Database::connect();
 
@@ -26,7 +22,7 @@ if (array_key_exists('page', $_GET)) {
 if (!checkPage($askedPage)) {
     $askedPage = "homepage";
 }
-generateHTMLHeader($askedPage);
+generateHTMLHeader(getPageTitle($askedPage));
 generateMenu($askedPage);
 require("content/contenu_$askedPage.php");
 
